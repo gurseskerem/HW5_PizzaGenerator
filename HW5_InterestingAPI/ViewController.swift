@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         let configuration = ARWorldTrackingConfiguration()
         sceneView.session.run(configuration)
-        //addObject()
+        addObject()
         
     }
     func addObject() {
@@ -53,11 +53,6 @@ class ViewController: UIViewController {
         return Float(arc4random()) / Float(UInt32.max) * (lower - upper) + upper
     }
     
-    @IBAction func buttonClicked(_ sender: Any) {
-        //let configuration = ARWorldTrackingConfiguration()
-        //sceneView.session.run(configuration)
-        
-    }
     
     
     
